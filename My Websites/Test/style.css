@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "New Tegomin";
+    box-sizing: border-box;
+    transition: all .5s;
+}
+
+body{
+    background-image: url(pub.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.top-bar{
+    /* border: 1px solid green; */
+    background-color: rgba(0, 0, 0, 0.708);
+    display: flex;
+    width: 100%;
+    height: 7.5rem;
+    padding: 15px 18px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-bar img{
+    width: 140px;
+    border-radius: 50%;
+}
+
+input, label{
+    display: none;
+}
+
+label{
+    position: absolute;
+    right: 0;
+}
+
+.top-bar ul{
+    /* border: 1px solid green; */
+    display: flex; 
+    width: 370px; 
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.top-bar ul li{
+    list-style: none;
+}
+
+.top-bar ul li a{
+    text-decoration: none;
+    color: wheat;
+}
+
+@media (max-width: 750px){
+    .top-bar{
+        padding: 6px 20px;
+    }
+
+    .top-bar ul{
+        position: absolute;
+        display: flex;
+        top: 7.5rem;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: hsla(198, 11%, 23%, 0.71);
+    }
+
+    .top-bar ul li{
+        width: 100%;
+    }
+
+    label{
+        font-size: 24px;
+        display: block;
+        margin-right: 20px;
+        cursor: pointer;
+        color: bisque;
+    }
+
+    .top-bar ul li a{
+        line-height: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top-bar ul li a:hover{
+        background-color: hsla(36, 7%, 14%, 0.705);
+        transition: all 0.2s ease;
+    }
+
+    #check:checked ~ ul {
+        left: -100%;
+    }
+
+    
+}

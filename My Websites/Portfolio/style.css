@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Mallanna", sans-serif;
+    font-style: normal;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(snowback.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+
+.nav-top{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    /* border: 1px solid green; */
+    background-image: linear-gradient(to right, #b0c5eb, rgb(61, 204, 197));
+    box-shadow: 2px 2px 4px #9ecdc6;
+}
+
+.nav-top h2{
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 0.8px;
+    text-shadow: 5px 5px 10px rgb(167, 91, 158);
+    cursor:context-menu;
+    transition: 0.2s;
+    /* border: 1px solid green; */
+}
+
+.nav-top h2:hover{
+    text-shadow: 5px 5px 10px rgb(255, 123, 0);
+    transition: 0.5s;
+}
+
+.nav-top ul{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid green; */
+    top: 0;
+    bottom: 0;
+    right: 210px;
+    gap: 5px;
+}
+
+.nav-top .nav-content ul li{
+    /* border: 1px solid green; */
+    padding: 18px;
+    list-style: none;
+    transition: 0.2s;
+}
+
+.nav-top .nav-content ul li a{
+    padding: 10px 16px;
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+    transition: 0.2s;
+    /* background-color: hsla(0, 21%, 89%, 0.477); */
+}
+
+.nav-top .nav-content ul li:hover{
+    transform: scale(1.5, 1.5);
+    transition: 0.5s;
+}
+
+.nav-top .nav-content ul li a:hover{
+    color: #2d3ebe;
+    transition: 0.5s;
+    border-radius: 100%;
+    background-color: hsla(0, 21%, 89%, 0.477);
+}
+
+.nav-top .social-media{
+    width: 130px;
+    top: 0;
+    bottom: 0;
+    /* border: 1px solid green; */
+    display: flex;
+    padding: 15px 15px;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-top .social-media a{      
+    transition: 0.2s;
+    font-size: 24px;
+    padding: 6px 6px;
+    text-decoration: none;
+    color: rgb(34, 92, 142);
+    /* border: 1px solid green */
+}
+
+.nav-top .social-media a:hover{
+    color: rgb(219, 213, 213);
+    transform: scale(2, 2);
+    transition: 0.5s;
+}
+
+.content h2{
+    font-size: 42px;
+}
+
+.content{
+    border: 1px solid green;
+    display: flex;
+    position: relative;
+    margin-top: 8%;
+    align-items: center;
+    justify-content: center;
+    column-gap: 240px;
+}
+
+.content .desc{
+    /* border: 1px solid green; */
+    width: 490px;
+    text-align: justify;
+    cursor: context-menu;
+}
+.content .desc span{
+    color: #eacd4e;
+    font-weight: bold;
+    text-shadow: 3px 5px 8px rgb(0, 255, 119);
+}
+
+.content .desc span:hover{
+    text-shadow: 5px 5px 10px rgb(255, 123, 0);
+    transition: 0.5s;
+    cursor: context-menu;
+}
+
+.content .desc p{
+    font-size: 18px ;
+    font-weight: 500;
+}
+
+.content .desc button{
+    font-size: 18px;
+    position: absolute;
+    margin-top: 18px;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #a4c2f5;
+    border: none;
+    transition: 0.2s;
+}
+
+.content .desc button:hover{
+    font-size: 20px;
+    background-color: #78a6f6;
+    /* border: 1px solid rgb(157, 232, 239); */
+    width: 123px;
+    height: 43px;
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.2, 1.2);
+    box-shadow: 0px 0px 5px 5px rgb(240, 227, 128);
+}
+
+.content img{
+    border-radius: 60%;
+    border: 4px solid rgba(238, 249, 76, 0.603);
+}
+
+@media screen {
+    
+}

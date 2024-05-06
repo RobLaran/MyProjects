@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: hsl(82, 23%, 25%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(b.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box {
+    border: 5px solid hsl(38, 32%, 24%);
+    width: 340px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: transparent;
+    backdrop-filter: blur(25px);
+    position: relative;
+}
+
+.box h1 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+}
+
+form {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+input[type="text"], input[type="password"] {
+    padding: 20px;
+    border: 1px solid rgb(81, 69, 45);
+    width: 100%;
+    border-radius: 30px;
+    outline: none;
+    background: transparent;
+    color: hsl(0, 20%, 20%);
+}
+
+.form-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+label {
+    position: absolute;
+    left: 12px;
+}
+
+.remember-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+button {
+    border: none;
+    padding: 12px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: large;
+}
+
+input:valid + label,
+input:focus + label {
+    background-color: none;
+    transform: translate(8px, -38px);
+    transition: 0.2s;
+    border-radius: 5px;
+    color:hsl(204, 5%, 18%);
+    font-size: large;
+}

@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "New Tegomin", serif;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+body{
+    width: 100%;
+    background-image: url(pub.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.top-content{
+    display: flex;
+    background-color: hsla(0, 0%, 0%, 0.705);
+    width: 100%;
+    height: 7.5rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px;
+}
+input{
+    display: none;
+}
+.top-content img{
+    width: 140px;
+    border-radius: 50%;
+}
+.top-content img:hover{
+    box-shadow: 0px 0px 10px goldenrod;
+    transform: scale(1.1, 1.1);
+}
+.top-content ul{
+    /* border: 1px solid green; */
+    list-style: none;
+    display: flex;
+    width: 640px;
+    justify-content: space-between;
+}
+.top-content ul li a{
+    display: flex;
+    text-decoration: none;
+    color: wheat;
+    font-size: 18px;
+    width: 100%;
+}
+.top-content ul li a:hover{
+    text-shadow: 3px 3px 4px goldenrod;
+    transform: scale(1.2, 1.2);
+}
+
+
+.mid-content{
+    padding: 60px 20px;
+    display: flex;
+    height: 100vh;
+    justify-content: space-evenly;
+}
+
+.mid-content img{
+    max-width: 420px;
+    height: 380px;
+    background-color: hsla(0, 0%, 0%, 0.7);
+    border-radius: 50%;
+}
+.mid-content .desc{
+    max-width: 620px;
+    height: 380px;
+    background-color: hsla(0, 0%, 0%, 0.7);
+    border-radius: 10%;
+    padding: 15px 20px;
+    color: wheat;
+    display: grid;
+}
+.mid-content .desc h2{
+    font-size: 32px;
+}
+.mid-content .desc p{
+    font-size: 18px;
+    text-indent: 90px;
+    text-align: justify;
+}
+.mid-content .desc .buttons{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mid-content .desc .buttons button{
+    width: 200px;
+    height: 55px;
+    border-radius: 60%;
+    background-color: rgb(254, 217, 171);
+    font-size: 19px;
+    border: none;
+    box-shadow: 0px 0px 18px rgba(244, 195, 70, 0.753);
+}
+.mid-content .desc .buttons button:hover{
+    transform: scale(1.1, 1.1);
+    border: 1px solid blanchedalmond;
+    box-shadow: 0px 0px 18px rgb(255, 224, 19);
+    cursor: pointer;
+}
+
+@media (max-width: 1200px){
+    .mid-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+        align-items: center;
+    }
+    .mid-content .desc h2{
+        font-size: 32px;
+    }
+    .mid-content .desc p{
+        font-size: 18px;
+    }
+    .mid-content .desc .buttons button{
+        width: 150px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 981px){
+    .top-content{
+        justify-content: center;
+    }
+    .top-content img{
+        display: block;
+        cursor: pointer;
+    }
+    .top-content ul{
+        background-color: hsla(0, 9%, 15%, 0.7);
+        position: absolute;
+        top: 7.5rem;
+        left: 0;
+        right: 0;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-content ul li{
+        width: 100%;
+        line-height: 2.9rem;
+
+    }
+    .top-content ul li a{
+        display: flex;
+        justify-content: center;
+    }
+    .top-content ul li a:hover{
+        background-color: hsla(0, 0%, 0%, 0.7);
+        transform: none;
+    }
+    #check:checked ~ ul {
+        left: -100%;
+    }
+    .mid-content img{
+        display: none;
+    }
+}
+
+@media (max-width: 600px){
+    .mid-content .desc h2{
+        font-size: 29px;
+    }
+    .mid-content .desc p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 390px){
+    .mid-content .desc{
+        height: 340px;
+        border-radius: 5%;
+    }
+    .mid-content .desc h2{
+        font-size: 20px;
+    }
+    .mid-content .desc p{
+        font-size: 10px;
+        text-indent: 50px;
+    }
+    .mid-content .desc .buttons button{
+        font-size: 12px;
+        width: 100px;
+        height: 25px;
+    }
+}

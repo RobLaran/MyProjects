@@ -1,0 +1,72 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    font-family: "Enriqueta", serif;
+}
+
+body{
+    background-image: url(bgWed.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.top{
+    padding: 5px 20px;
+    height: 80px;
+    background: rgba(240, 240, 240, 0.8);
+    display: flex;
+    align-items: center;        
+    justify-content: space-between;
+}
+
+.top img{
+    /* border: 1px solid green; */
+    width: 160px;
+    padding: 5px 5px;
+}
+
+/* .top .navs{
+    border: 1px solid green;
+    transform: translateX(-65%);
+} */
+
+.top .navs ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.top .navs ul li{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.top .navs ul li a{
+    color: rgb(41, 29, 29);
+    text-decoration: none;
+}
+
+.main{
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+h1{
+    font-size: 52px;
+}
+
+p{
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.main img{
+    width: 600px;
+    margin-top: 60px;
+}
+

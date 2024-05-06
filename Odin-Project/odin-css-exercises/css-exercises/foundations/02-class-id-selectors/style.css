@@ -1,0 +1,18 @@
+.odd{
+    background-color: lightpink;
+    font-family: Verdana, "Deja Vu", sans-serif;
+}
+
+#id1{
+    color: blue;
+    font-size: 36px;
+}
+
+.odd.different{
+    font-size: 24px;
+}
+
+#id2{
+    background-color: lightgreen;
+    font-weight: 700;
+}
