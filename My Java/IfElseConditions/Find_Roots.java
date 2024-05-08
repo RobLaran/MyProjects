@@ -1,0 +1,26 @@
+package IfElseConditions;
+
+public class Find_Roots {
+    public static void main(String[] args) {
+        double a = 2.3, b = 4, c = 5.6, discriminant;
+        double  root1, root2;
+        discriminant =  Math.pow(b, 2) - 4 * (a * c);
+
+        if(discriminant > 0){
+            //formula of quadratic equation: (-b ± sqrt(b^2 - 4ac)) / (2a)
+            root1 = ((-1 * b) + Math.sqrt(discriminant / (2 *a)));
+            root2 = ((-1 * b) - Math.sqrt(discriminant / (2 *a)));
+            System.out.format("root1 = %.2f and root2 = %.2f", root1, root2);
+        } else if (discriminant == 0){
+            root1 = root2 = -b / (2 * a);
+		    System.out.format("root1 = root2 = %.2f;", root1);
+        } else {
+            double real = -b / (2 * a);
+		    double img = Math.sqrt(-discriminant) / (2 * a);
+		    System.out.format("root1 = %.2f+%.2fi", real, img);
+		    System.out.format("\nroot2 = %.2f-%.2fi", real, img);
+        }
+
+        
+    }
+}

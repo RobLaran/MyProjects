@@ -1,3 +1,5 @@
+package Arrays;
+
 public class MoveAll_ZeroEnd {
     public static void main(String[] args) {
         int[] array = {1,0,45,34,0,67,2,0,6,67,45,2,0,10};
