@@ -1,7 +1,7 @@
 package Interface.Sortable;
 
 // Sample Output:
-
+// Unsorted Array: 1 3 2 6 4 8 0
 // Bubble Sort: 0 1 2 3 4 6 8
 // Selection Sort: 0 1 2 3 4 6 8 
 
@@ -12,6 +12,34 @@ package Interface.Sortable;
 
 public class Main {
     public static void main(String[] args) {
+        int[] arr = {1, 6, 2 ,3, 4, 8, 0};
+        int[] arra = {52, 60, 22 ,33, 44, 81, 70};
+
+        Sortable bubSort = new BubbleSort(arr);
+        Sortable selSort = new SelectionSort(arra);
+
+        // Bubble Sorting Array
+        System.out.print("Unsorted Array: ");
+        for(int i : arr){
+            System.out.print(i + " ");
+        }System.out.println();
         
+        bubSort.sort();
+        System.out.print("Bubble Sort Array: ");
+        for(int i : arr){
+            System.out.print(i + " ");
+        }System.out.println();
+
+        // Selection Sorting Array
+        System.out.print("Unsorted Array: ");
+        for(int i : arra){
+            System.out.print(i + " ");
+        }System.out.println();
+        
+        selSort.sort();
+        System.out.print("Selection Sort Array: ");
+        for(int i : arra){
+            System.out.print(i + " ");
+        }System.out.println();
     }
 }
