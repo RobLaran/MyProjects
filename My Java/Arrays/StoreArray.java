@@ -1,3 +1,5 @@
+package Arrays;
+
 public class StoreArray {
     public static void main(String[] args) {
         

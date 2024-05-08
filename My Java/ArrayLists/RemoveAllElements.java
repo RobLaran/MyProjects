@@ -1,7 +1,8 @@
-import java.util.ArrayList;
-import java.util.Collections;
+package ArrayLists;
 
-public class SortElement {
+import java.util.ArrayList;
+
+public class RemoveAllElements {
     public static void main(String[] args) {
         ArrayList<String> computers = new ArrayList<String>();
 
@@ -10,11 +11,11 @@ public class SortElement {
         computers.add("PC");
         computers.add("Laptop");
 
-        System.out.println(computers);
-
-        Collections.sort(computers);
-
-        System.out.println(computers);
+        System.out.println("Original Elements: " + computers);
+        
+        computers.removeAll(computers);
+        
+        System.out.println("Removed all elements: " + computers);
 
     }
 

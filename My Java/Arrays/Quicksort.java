@@ -1,3 +1,5 @@
+package Arrays;
+
 public class Quicksort {
     public static void main(String[] args) {
         int[] array = {5,1,6,2,3,7,4};

@@ -1,6 +1,8 @@
+package ArrayLists;
+
 import java.util.ArrayList;
 
-public class StringColors {
+public class IterateStringColors {
     public static void main(String[] args) {
         ArrayList<String> colors = new ArrayList<String>(); 
 
@@ -10,7 +12,9 @@ public class StringColors {
         colors.add("Orange");
         colors.add("Yellow");
 
-        System.out.println(colors);
-
+        for (String string : colors) {
+            System.out.println(string + " ");
+        }
     }
 }
+

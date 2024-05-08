@@ -1,3 +1,5 @@
+package Loops;
+
 public class WholePyramidStar {
     public static void main(String[] args) {
         

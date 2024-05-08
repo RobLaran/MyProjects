@@ -1,6 +1,8 @@
+package ArrayLists;
+
 import java.util.ArrayList;
 
-public class RetrieveElement {
+public class UpdateArrayElement {
     public static void main(String[] args) {
         ArrayList<String> colors = new ArrayList<String>(); 
 
@@ -12,7 +14,9 @@ public class RetrieveElement {
 
         System.out.println(colors);
 
-        System.out.println("Retrieving: " + colors.get(2) + " at Index 2");
-        System.out.println("Retrieving: " + colors.get(4) + " at Index 4");
+        colors.set(3, "Khaki");
+        colors.set(2, "Pink");
+
+        System.out.println("Updated new elements:" + colors);
     }
 }

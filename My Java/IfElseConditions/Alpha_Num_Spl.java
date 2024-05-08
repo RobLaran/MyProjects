@@ -1,3 +1,5 @@
+package IfElseConditions;
+
 import java.util.Scanner;
 
 public class Alpha_Num_Spl {

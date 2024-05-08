@@ -1,3 +1,5 @@
+package Arrays;
+
 import java.util.Arrays;
 
 public class Array_FindDuplicates {

@@ -1,6 +1,8 @@
+package ArrayLists;
+
 import java.util.ArrayList;
 
-public class IterateStringColors {
+public class RetrieveElement {
     public static void main(String[] args) {
         ArrayList<String> colors = new ArrayList<String>(); 
 
@@ -10,9 +12,9 @@ public class IterateStringColors {
         colors.add("Orange");
         colors.add("Yellow");
 
-        for (String string : colors) {
-            System.out.println(string + " ");
-        }
+        System.out.println(colors);
+
+        System.out.println("Retrieving: " + colors.get(2) + " at Index 2");
+        System.out.println("Retrieving: " + colors.get(4) + " at Index 4");
     }
 }
-

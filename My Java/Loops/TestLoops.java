@@ -1,3 +1,5 @@
+package Loops;
+
 public class TestLoops{
     public static void main(String[] args) {
         int[] array = {2, 65, 23, 13, 18, 30, 46, 17, 52, 78};

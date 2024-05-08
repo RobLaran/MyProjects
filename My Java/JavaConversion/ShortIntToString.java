@@ -1,3 +1,5 @@
+package JavaConversion;
+
 import java.util.Scanner;
 
 public class ShortIntToString {

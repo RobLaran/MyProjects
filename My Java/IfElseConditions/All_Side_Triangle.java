@@ -1,3 +1,5 @@
+package IfElseConditions;
+
 import java.util.Scanner;
 
 public class All_Side_Triangle {

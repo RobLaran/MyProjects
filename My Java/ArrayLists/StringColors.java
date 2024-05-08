@@ -1,6 +1,8 @@
+package ArrayLists;
+
 import java.util.ArrayList;
 
-public class UpdateArrayElement {
+public class StringColors {
     public static void main(String[] args) {
         ArrayList<String> colors = new ArrayList<String>(); 
 
@@ -12,9 +14,5 @@ public class UpdateArrayElement {
 
         System.out.println(colors);
 
-        colors.set(3, "Khaki");
-        colors.set(2, "Pink");
-
-        System.out.println("Updated new elements:" + colors);
     }
 }

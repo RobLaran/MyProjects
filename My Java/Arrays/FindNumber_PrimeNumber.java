@@ -1,3 +1,5 @@
+package Arrays;
+
 public class FindNumber_PrimeNumber {
     public static void main(String[] args) {
         int[] array = {3, 12, 21, 11, 71, 96, 19, 41, 83, 101};
