@@ -1,70 +1,88 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.main{
-    margin: 50px 50px;
-    padding: 20px ;
-    border: 2px solid black;
-    width: 500px;
-    height: 500px;
-    display: inline-flex;
+.container {
+  margin: 50px 50px;
+  padding: 20px;
+  border: 2px solid black;
+  width: 500px;
+  height: 500px;
+  display: grid;
+}
+/* Box 1 */
+.box1 {
+  display: flexbox;
+  width: 400px;
+  height: 200px;
+  border: 5px solid purple;
+  background-color: aquamarine;
+  padding: 20px;
 }
 
-.box1{
-    display: flexbox;
-    width: 400px;
-    height: 200px;
-    border: 5px solid purple;
-    background-color: aquamarine;
-    padding: 20px;
-}
-
-span{
-    /* display: block; */
-    border: 1px solid greenyellow;
-}
-
-ul{
-    border: 1px solid gold;
-    padding: 10px 30px;
-    display: grid;
-    /* align-items: center; */
-    /* justify-items: center; */
-    row-gap:2px;
+.ulist1 {
+  border: 1px solid gold;
+  padding: 10px 30px;
+  display: grid;
+  row-gap: 5px;
 }
 
 .list{
-    border: 1px solid orange;
-    width: 150px;
-    padding: 4px 0px;
-    display: flex;
-    justify-content: center;
-
-    /* align-items: center; */
+  list-style: none;
 }
 
-.two, .one{
-    /* display: inline-block; */
-    /* padding: 10px; */
-}
-.three{
-    /* display: inline-block; */
-    /* padding: 5px; */
-}
-.four{
-    /* display: inline; */
-    /* padding: 15px; */
+.ulist1 .list {
+  border: 1px solid orange;
+  width: 200px;
+  padding: 3px 0px;
+  display: inline-flex;
+  justify-content: center;
 }
 
-.box2{
-    border: 1px dashed deeppink;
-    display: inline-flex;
-    width: 50px;
-    height: 50px;
-    padding: 30px;
-    align-items: center;
-    justify-content: center;
+.ulist1 .list:hover {
+  transition: 0.3s;
+  background: red;
+  color: purple;
+  transform: scale(1.2, 1.1);
+}
+/* Box 2 */
+.box2 {
+  border: 5px dashed deeppink;
+  width: 450px;
+  height: 200px;
+  padding: 20px;
+  background: powderblue;
+}
+
+.ulist2{
+  outline: 1px solid rgb(255, 47, 109);
+  min-height: 150px;
+  max-width: 380px;
+  padding: 10px;
+  display: flex;
+}
+
+.ulist2 .list{
+  outline: 1px solid red;
+  flex: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ulist2 .list.three{
+  flex-grow: ;
+}
+
+.ulist2 .list.four{
+  background: grey;
+}
+
+.ulist2 .list:hover {
+  transition: 0.2s;
+  background: red;
+  color: purple;
+  transform: scale(1.4, 1.4);
 }
